@@ -1,0 +1,6 @@
+_extends: .github
+repository:
+  name: hapi-create-react-app
+  description: Hapi.js serving SPA created from create-react-app.
+  homepage: 'https://github.com/trevtrich/hapi-create-react-app#readme'
+  private: false
