@@ -10,6 +10,7 @@ export default {
   server: {port: process.env.PORT, routes: {security: true}},
   register: {
     plugins: [
+      {plugin: require('@hapi/inert')},
       {
         plugin: require('hapi-graceful-shutdown-plugin'),
         options: {
@@ -35,7 +36,8 @@ export default {
             ]
           }
         }
-      }
+      },
+      {plugin: require('./routes/view')}
     ]
   }
 };

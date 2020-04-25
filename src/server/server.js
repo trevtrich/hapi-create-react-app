@@ -1,7 +1,7 @@
 import Glue from '@hapi/glue';
 import manifest from './manifest';
 
-const startServer = async function () {
+async function startServer() {
   try {
     const server = await Glue.compose(manifest, {relativeTo: __dirname});
     server.log(['startup'], 'The server has been created.');
@@ -17,6 +17,6 @@ const startServer = async function () {
 
     return undefined;
   }
-};
+}
 
 export default startServer();
