@@ -22,3 +22,6 @@ jobs:
       project: hapi-create-react-app
       version: "$(git rev-parse --short HEAD)"
       config: app.yaml
+
+env:
+  - SKIP_PREFLIGHT_CHECK=true
