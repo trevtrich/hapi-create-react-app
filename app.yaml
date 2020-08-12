@@ -1,2 +1,2 @@
-runtime: nodejsv12
+runtime: nodejs12
 service: hapi-create-react-app
