@@ -19,7 +19,7 @@
     "build:server": "babel src --out-dir lib",
     "build:client": "npm run --prefix ./client build",
     "build": "npm-run-all --print-label --parallel build:*",
-    "start": "node ./lib/server",
+    "start": "node --trace-warnings lib/server/index.js",
     "test:integration": "cucumber-js test/integration --profile=base --profile=noWip",
     "pretest:integration": "run-s build",
     "clean": "rimraf ./lib",
